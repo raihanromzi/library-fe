@@ -1,6 +1,6 @@
 import './App.css';
-import Navbar from './components/Navbar.jsx';
+import Filter from './components/Filter.jsx';
 
 export default function App() {
-  return <Navbar />;
+  return <Filter>Sort</Filter>;
 }
