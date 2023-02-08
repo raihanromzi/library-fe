@@ -4,8 +4,11 @@ import Navbar from './components/Navbar.jsx';
 import CardBook from './components/Card.jsx';
 import { Flex } from '@chakra-ui/react';
 import Footer from './components/Footer.jsx';
+import { useState } from 'react';
 
 export default function App() {
+  const [page, setPage] = useState(1);
+
   return (
     <>
       <Navbar />
