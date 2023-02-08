@@ -1,6 +1,6 @@
 import './App.css';
-import Home from './pages/Home.jsx';
+import LoginUser from './pages/LoginUser.jsx';
 
 export default function App() {
-  return <Home />;
+  return <LoginUser />;
 }

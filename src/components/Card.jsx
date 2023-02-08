@@ -4,17 +4,19 @@ export default function CardBook({ image, title, author }) {
   return (
     <LinkBox as={'article'}>
       <LinkOverlay href={'www.google.com'}>
-        <Card w={'320px'} h={'420px'} variant={'outline'}>
-          <CardBody>
+        <Card w={'320px'} variant={'outline'}>
+          <CardBody p={4}>
             <Image src={'https://bit.ly/dan-abramov'} alt={'test'} />
-            <VStack alignItems={'flex-start'} mt={3} mb={3}>
-              <Tag>Fiction</Tag>
+            <VStack alignItems={'flex-start'}>
+              <Tag mt={4} mb={4}>
+                Fiction
+              </Tag>
             </VStack>
             <VStack alignItems={'flex-start'}>
               <Text as={'b'} textTransform={'capitalize'}>
                 {title}
               </Text>
-              <Text>{author}</Text>
+              <Text pb={3}>{author}</Text>
             </VStack>
           </CardBody>
         </Card>

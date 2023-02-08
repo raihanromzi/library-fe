@@ -7,9 +7,15 @@ import Footer from '../components/Footer.jsx';
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar navItems={['Home', 'Login', 'Cart()']} />
       <Filter />
-      <Flex flexDirection={'row'} gap={'8'} mt={10} mb={'400'} wrap={'wrap'}>
+      <Flex
+        flexDirection={'row'}
+        gap={'8'}
+        mt={10}
+        mb={'400'}
+        wrap={'wrap'}
+        justifyContent={'space-between'}>
         <CardBook title={'Atomic Habit'} author={'James'} />
         <CardBook title={'Atomic Habit'} author={'James'} />
         <CardBook title={'Atomic Habit'} author={'James'} />
