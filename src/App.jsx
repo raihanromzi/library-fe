@@ -1,6 +1,6 @@
 import './App.css';
-import { Register } from './pages/Register.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
-  return <Register />;
+  return <NotFound />;
 }
