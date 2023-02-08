@@ -1,6 +1,6 @@
 import './App.css';
-import LoginUser from './pages/LoginUser.jsx';
+import { Register } from './pages/Register.jsx';
 
 export default function App() {
-  return <LoginUser />;
+  return <Register />;
 }
