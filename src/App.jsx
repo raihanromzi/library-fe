@@ -9,7 +9,7 @@ export default function App() {
     <>
       <Navbar />
       <Filter />
-      <Flex justifyContent={'center'} gap={'4'} mt={10}>
+      <Flex gap={'8'} mt={10} flexWrap={'wrap'}>
         <CardBook title={'Atomic Habit'} author={'James'} />
         <CardBook title={'Atomic Habit'} author={'James'} />
         <CardBook title={'Atomic Habit'} author={'James'} />

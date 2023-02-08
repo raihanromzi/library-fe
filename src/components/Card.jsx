@@ -4,7 +4,7 @@ export default function CardBook({ image, title, author }) {
   return (
     <LinkBox as={'article'}>
       <LinkOverlay href={'www.google.com'}>
-        <Card maxW={'361px'} maxH={'566px'}>
+        <Card w={'320px'} h={'420px'} variant={'outline'}>
           <CardBody>
             <Image src={'https://bit.ly/dan-abramov'} alt={'test'} />
             <VStack alignItems={'flex-start'} mt={3} mb={3}>
