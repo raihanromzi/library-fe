@@ -4,7 +4,7 @@ import LoginCard from '../components/LoginCard.jsx';
 export default function LoginAdmin() {
   return (
     <>
-      <Navbar navItems={['Home', 'Admin']} />
+      <Navbar />
       <LoginCard loginHeader={'Admin'} />
     </>
   );

@@ -1,13 +1,16 @@
 import Navbar from '../components/Navbar.jsx';
 import Filter from '../components/Filter.jsx';
 import { Flex } from '@chakra-ui/react';
-import CardBook from '../components/Card.jsx';
+import BookCard from '../components/BookCard.jsx';
 import Footer from '../components/Footer.jsx';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <>
-      <Navbar navItems={['Home', 'Login', 'Cart()']} />
+      <Navbar />
       <Filter />
       <Flex
         flexDirection={'row'}
@@ -16,14 +19,14 @@ export default function Home() {
         mb={'400'}
         wrap={'wrap'}
         justifyContent={'space-between'}>
-        <CardBook title={'Atomic Habit'} author={'James'} />
-        <CardBook title={'Atomic Habit'} author={'James'} />
-        <CardBook title={'Atomic Habit'} author={'James'} />
-        <CardBook title={'Atomic Habit'} author={'James'} />
-        <CardBook title={'Atomic Habit'} author={'James'} />
-        <CardBook title={'Atomic Habit'} author={'James'} />
-        <CardBook title={'Atomic Habit'} author={'James'} />
-        <CardBook title={'Atomic Habit'} author={'James'} />
+        <BookCard navigateTo={'../book'} title={'Atomic Habit'} author={'James'} />
+        <BookCard navigateTo={'../book'} title={'Atomic Habit'} author={'James'} />
+        <BookCard navigateTo={'../book'} title={'Atomic Habit'} author={'James'} />
+        <BookCard navigateTo={'../book'} title={'Atomic Habit'} author={'James'} />
+        <BookCard navigateTo={'../book'} title={'Atomic Habit'} author={'James'} />
+        <BookCard navigateTo={'../book'} title={'Atomic Habit'} author={'James'} />
+        <BookCard navigateTo={'../book'} title={'Atomic Habit'} author={'James'} />
+        <BookCard navigateTo={'../book'} title={'Atomic Habit'} author={'James'} />
       </Flex>
       <Footer />
     </>
