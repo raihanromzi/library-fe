@@ -10,7 +10,7 @@ export default function LoginUser() {
       <Center mt={10}>
         <LinkBox as={'section'}>
           Not registered yet?
-          <LinkOverlay href={'www.google.com'}>
+          <LinkOverlay href={'../register'}>
             <b> Register here</b>
           </LinkOverlay>
         </LinkBox>
