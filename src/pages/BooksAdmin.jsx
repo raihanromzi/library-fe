@@ -1,14 +1,13 @@
 /* eslint-disable prettier/prettier */
-import React, { useEffect } from 'react'
-import Select from 'react-select'
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Select from "react-select";
 import { GrFormAdd } from "react-icons/gr";
-import { axiosInstance } from '../config/config';
-import { AiOutlineSortAscending, AiOutlineSortDescending } from 'react-icons/ai';
-import InfiniteScroll from 'react-infinite-scroll-component';
-import NavBarAdmin from '../components/NavBarAdmin';
-import ModalCreateBook from '../components/ModalCreateBook';
-import BookCardAdmin from '../components/BookCardAdmin';
+import { axiosInstance } from "../config/config";
+import { AiOutlineSortAscending, AiOutlineSortDescending } from "react-icons/ai";
+import InfiniteScroll from "react-infinite-scroll-component";
+import NavBarAdmin from "../components/NavBarAdmin";
+import ModalCreateBook from "../components/ModalCreateBook";
+import BookCardAdmin from "../components/BookCardAdmin";
 
 
 export default function BooksAdmin() {

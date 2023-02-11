@@ -1,9 +1,8 @@
 /* eslint-disable prettier/prettier */
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { axiosInstance } from "../config/config";
 import user_types from "../redux/auth/types";
-import { useState } from "react";
 
 const AuthProvider = ({ children }) => {
     const dispatch = useDispatch();

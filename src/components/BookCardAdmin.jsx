@@ -1,8 +1,7 @@
 /* eslint-disable prettier/prettier */
-import { useState } from 'react';
-import altCover from '../assets/alt-cover.jpg';
-import ModalDeleteBook from './ModalDeleteBook';
-import ModalUpdateBook from './ModalUpdateBook';
+import { useState } from "react";
+import ModalDeleteBook from "./ModalDeleteBook";
+import ModalUpdateBook from "./ModalUpdateBook";
 
 export default function BookCardAdmin({ book, setChange, setBooks, setHasMore, setLength, setTempLength }) {
     const [showModalUpdate, setShowModalUpdate] = useState(false);

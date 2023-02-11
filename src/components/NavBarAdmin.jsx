@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
-import { Link } from 'react-router-dom';
-import Logo from '../assets/logo-openlibz.png';
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo-openlibz.png";
 
 export default function NavBarAdmin() {
     return (

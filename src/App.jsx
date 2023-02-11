@@ -4,8 +4,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import routes from './routes/routes.jsx';
 
 export default function App() {
-  console.log(routes);
-
   return (
     <BrowserRouter>
       <Routes key={'route'}>
