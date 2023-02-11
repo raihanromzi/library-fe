@@ -42,6 +42,18 @@ export default function Navbar() {
             </MenuButton>
             <MenuList>
               <MenuItem>
+                <Button variant="nav">Cart(0)</Button>
+              </MenuItem>
+              <MenuItem>
+                <Button
+                  variant="nav"
+                  onClick={() => {
+                    navigate('../Home');
+                  }}>
+                  Loan List
+                </Button>
+              </MenuItem>
+              <MenuItem>
                 <Button
                   variant="nav"
                   onClick={() => {
@@ -54,13 +66,10 @@ export default function Navbar() {
                 <Button
                   variant="nav"
                   onClick={() => {
-                    navigate('../Home');
+                    navigate('../login');
                   }}>
-                  Loan List
+                  Logout
                 </Button>
-              </MenuItem>
-              <MenuItem>
-                <Button variant="nav">Cart(0)</Button>
               </MenuItem>
             </MenuList>
           </Menu>
