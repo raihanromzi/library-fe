@@ -7,7 +7,7 @@ import LoginAdmin from '../pages/LoginAdmin';
 
 import LoginUser from '../pages/LoginUser';
 import NotFound from '../pages/NotFound';
-import Register from '../pages/Register';
+import RegisterUser from '../pages/RegisterUser.jsx';
 import PageProtected from './protected';
 import BookDetail from '../pages/BookDetail.jsx';
 
@@ -18,21 +18,12 @@ const routes = [
   },
   {
     path: '/login',
-    element: (
-      <PageProtected guestOnly={true}>
-        <LoginUser />
-      </PageProtected>
-    )
+    element: <LoginUser />
   },
   {
     path: '/register',
-    element: (
-      <PageProtected guestOnly={true}>
-        <Register />
-      </PageProtected>
-    )
+    element: <RegisterUser />
   },
-
   {
     path: '/book',
     element: <BookDetail />
