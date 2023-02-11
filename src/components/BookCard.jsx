@@ -1,6 +1,6 @@
 import { Card, CardBody, Image, LinkBox, LinkOverlay, Tag, Text, VStack } from '@chakra-ui/react';
 
-export default function BookCard({ navigateTo, image, title, author }) {
+export default function BookCard({ navigateTo, title, author }) {
   return (
     <LinkBox as={'button'}>
       <LinkOverlay href={navigateTo}>
