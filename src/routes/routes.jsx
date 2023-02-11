@@ -5,14 +5,21 @@ import DashboardAdmin from '../pages/DashboardAdmin';
 import Home from '../pages/Home';
 import LoansAdmin from '../pages/LoansAdmin';
 import LoginAdmin from '../pages/LoginAdmin';
+
 import LoginUser from '../pages/LoginUser';
 import NotFound from '../pages/NotFound';
 import Register from '../pages/Register';
 import PageProtected from './protected';
+import Home from '../pages/Home.jsx';
+import LoginUser from '../pages/LoginUser.jsx';
+import Register from '../pages/Register.jsx';
+import BookDetail from '../pages/BookDetail.jsx';
+import NotFound from '../pages/NotFound.jsx';
+import LoginAdmin from '../pages/LoginAdmin.jsx';
 
-export const routes = [
+const routes = [
   {
-    path: '/',
+    path: '/home',
     element: <Home />
   },
   {
@@ -31,9 +38,10 @@ export const routes = [
       </ PageProtected>
     )
   },
+  
   {
     path: '/book',
-    element: <Register />
+    element: <BookDetail />
   },
   {
     path: '/*',
@@ -80,3 +88,6 @@ export const routes = [
     )
   }
 ];
+
+
+export default routes;
