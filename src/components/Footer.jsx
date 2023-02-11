@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Center, Flex, Heading, Text } from '@chakra-ui/react';
 
 export default function Footer() {
   return (
@@ -17,12 +17,12 @@ export default function Footer() {
         <Flex flexDirection={'column'}>
           <Text textAlign={'left'}>Raihan Romzi R (Front-End)</Text>
           <Text textAlign={'left'}>Sandy (Back-End)</Text>
-          <Text textAlign={'left'}>Dan (Back-End)</Text>
+          <Text textAlign={'left'}>Dan Lalu (Back-End)</Text>
         </Flex>
       </Flex>
-      <Box p={3}>
+      <Center p={3}>
         <Text>Made with 🧡</Text>
-      </Box>
+      </Center>
     </Flex>
   );
 }
