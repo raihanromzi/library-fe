@@ -1,4 +1,4 @@
-import { Box, Button, Flex, HStack, Image } from '@chakra-ui/react';
+import { Box, Button, Flex, HStack, Image, LinkBox, LinkOverlay } from '@chakra-ui/react';
 import Logo from '../assets/logo-openlibz.png';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,7 +9,11 @@ export default function Navbar() {
     <Box as={'header'} id="header">
       <Flex as={'nav'} w="100%" py="5" align="center" justify="space-between">
         <HStack as={'ul'}>
-          <Image src={Logo} h={'24px'} />
+          <LinkBox as={'section'}>
+            <LinkOverlay href={'../home'}>
+              <Image src={Logo} h={'24px'} />
+            </LinkOverlay>
+          </LinkBox>
         </HStack>
         <HStack as={'ul'}>
           <Button
