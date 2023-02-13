@@ -10,6 +10,7 @@ import NotFound from '../pages/NotFound';
 import RegisterUser from '../pages/RegisterUser.jsx';
 import PageProtected from './protected';
 import BookDetail from '../pages/BookDetail.jsx';
+import LoanCart from '../pages/LoanCart.jsx';
 
 const routes = [
   {
@@ -31,6 +32,10 @@ const routes = [
   {
     path: '/*',
     element: <NotFound />
+  },
+  {
+    path: '/loancart',
+    element: <LoanCart />
   },
   {
     path: '/admin/login',

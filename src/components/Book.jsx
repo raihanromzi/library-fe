@@ -1,4 +1,4 @@
-import { Box, Flex, Image, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, LinkBox, LinkOverlay, Tag, Text, VStack } from '@chakra-ui/react';
 import ButtonComponent from './ButtonComponent.jsx';
 
 export default function Book() {
@@ -27,6 +27,18 @@ export default function Book() {
             <Text color={'green.600'} fontSize={'md'} mb={3}>
               James
             </Text>
+            <Flex flexDirection={'row'} gap={2}>
+              <VStack alignItems={'flex-start'}>
+                <Tag mt={2} mb={2}>
+                  Fiction
+                </Tag>
+              </VStack>
+              <VStack alignItems={'flex-start'}>
+                <Tag mt={2} mb={2}>
+                  Fiction
+                </Tag>
+              </VStack>
+            </Flex>
           </Flex>
           <Flex>
             <Text fontSize={'sm'} textAlign={'justify'}>
